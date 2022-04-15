@@ -20,6 +20,7 @@ cd application
 bash run_script.sh
 ```
 This script will build and run 6 NodeJS apps all being served on 8080. We need to build a NGINX load balancer to manage service of the 6 apps. 
+#### run_script.sh
 ![](/screenshots/1.png)
 
 ### NGINX
