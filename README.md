@@ -30,14 +30,13 @@ cd nginx-docker
 bash run_loadbalancer_script.sh
 
 ```
+#### run_loadbalancer_script.sh
+![](/screenshots/3.png)
 
 #### 2. Launch the browser and in the address bar go to http://localhost:8080
 #### 2.1. Refresh the page a few times and notice the app will change based on the load balancing algorithm. 
-#### 2.2. Investigate the nginx.conf file, does each app have the same chance of being served by nginx? How would you change this? 
-
-
-As the output of the original container `dns` shows, a fake DNS record has been successfully written into cache. It can be verified by using dig in the victim's container.
-
+#### 2.2. Investigate the nginx.conf file, does each app have the same chance of being served by nginx? How would you change this?
+#### nginx.conf
 ![](/screenshots/2.png)
 
 
@@ -45,4 +44,3 @@ As the output of the original container `dns` shows, a fake DNS record has been 
 Two containers are used in this project:\
 There is the NodeJS app that we create 6 instances of in our shell script. 
 There is our nginx load balancer that serves the apps based on the load balancer algorithm. 
-
